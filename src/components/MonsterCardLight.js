@@ -201,6 +201,31 @@ export default function MonsterCardLight({ monster, settings }) {
           {monster.hp} / {monster.maxHp}
         </span>
       </div>
+
+      {settings.showDamage && monster.damage && (
+        <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-2 gap-3 text-sm font-mono">
+          <div className="bg-gray-50 rounded-lg p-3 text-center">
+            <p className="text-gray-400 text-[10px]">LAST HIT</p>
+            <p className="font-black text-pink-600 text-lg">
+              {monster.damage.lastHit}
+            </p>
+          </div>
+
+          <motion.div
+            animate={
+              monster.damage.lastHit >= monster.damage.record
+                ? { scale: [1, 1.15, 1] }
+                : {}
+            }
+            className="bg-gray-50 rounded-lg p-3 text-center"
+          >
+            <p className="text-gray-400 text-[10px]">RECORD</p>
+            <p className="font-black text-red-500 text-lg">
+              {monster.damage.record}
+            </p>
+          </motion.div>
+        </div>
+      )}
     </motion.div>
   );
 }

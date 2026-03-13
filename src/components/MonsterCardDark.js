@@ -106,6 +106,31 @@ export default function MonsterCard({ monster, settings }) {
             })}
         </div>
       )}
+
+      {settings.showDamage && monster.damage && (
+        <div className="mt-4 pt-4 border-t border-white/10 grid grid-cols-2 gap-3 text-sm font-mono">
+          <div className="bg-black/30 rounded-lg p-3 text-center">
+            <p className="text-gray-400 text-[10px]">LAST HIT</p>
+            <p className="font-black text-pink-400 text-lg">
+              {monster.damage.lastHit}
+            </p>
+          </div>
+
+          <motion.div
+            animate={
+              monster.damage.lastHit >= monster.damage.record
+                ? { scale: [1, 1.2, 1] }
+                : {}
+            }
+            className="bg-black/30 rounded-lg p-3 text-center"
+          >
+            <p className="text-gray-400 text-[10px]">RECORD</p>
+            <p className="font-black text-red-400 text-lg">
+              {monster.damage.record}
+            </p>
+          </motion.div>
+        </div>
+      )}
     </motion.div>
   );
 }

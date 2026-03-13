@@ -28,7 +28,7 @@ export default function SettingsMenu({ settings, setSettings }) {
 
   return (
     <div className="flex justify-center">
-      <div className="flex gap-4 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+      <div className="flex gap-4 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl flex-wrap justify-center">
         <Button
           label="Status"
           icon="☠️"
@@ -51,6 +51,14 @@ export default function SettingsMenu({ settings, setSettings }) {
           active={settings.showMinions}
           color="from-blue-500 to-blue-700"
           onClick={() => toggle("showMinions")}
+        />
+
+        <Button
+          label="Damage"
+          icon="💥"
+          active={settings.showDamage}
+          color="from-pink-500 to-rose-700"
+          onClick={() => toggle("showDamage")}
         />
 
         <Button
