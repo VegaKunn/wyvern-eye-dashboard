@@ -1,11 +1,22 @@
 "use client";
 import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
-import MonsterCard from "@/components/MonsterCard";
+import SettingsMenu from "@/components/SettingsMenu";
+import MonsterCardDark from "@/components/MonsterCardDark";
+import MonsterCardLight from "@/components/MonsterCardLight";
 import { AnimatePresence } from "framer-motion";
+
+const MONSTER_TTL = 3000; // tempo sem update pra sumir
+const CLEAN_INTERVAL = 1000;
 
 export default function Home() {
   const [monsters, setMonsters] = useState({});
+  const [settings, setSettings] = useState({
+    showStatus: true,
+    showRage: true,
+    showMinions: true,
+    darkMode: true,
+  });
 
   useEffect(() => {
     const socket = io("http://localhost:4000");
@@ -13,52 +24,72 @@ export default function Home() {
     socket.on("monster_update", (data) => {
       setMonsters((prev) => ({
         ...prev,
-        [data.address]: { ...data, lastUpdate: Date.now() },
+        [data.address]: {
+          ...data,
+          lastUpdate: Date.now(),
+        },
       }));
     });
 
-    const cleanup = setInterval(() => {
+    // 🔥 LIMPEZA AUTOMÁTICA DE MONSTROS "FANTASMAS"
+    const interval = setInterval(() => {
       const now = Date.now();
+
       setMonsters((prev) => {
-        const next = { ...prev };
         let changed = false;
-        for (const id in next) {
-          if (now - next[id].lastUpdate > 3000) {
-            delete next[id];
+        const next = { ...prev };
+
+        for (const addr in next) {
+          if (now - next[addr].lastUpdate > MONSTER_TTL) {
+            delete next[addr];
             changed = true;
           }
         }
+
         return changed ? next : prev;
       });
-    }, 1000);
+    }, CLEAN_INTERVAL);
 
     return () => {
       socket.disconnect();
-      clearInterval(cleanup);
+      clearInterval(interval);
     };
   }, []);
 
-  const monsterList = Object.values(monsters);
+  let monsterList = Object.values(monsters);
+
+  if (!settings.showMinions) monsterList = monsterList.filter((m) => m.isLarge);
 
   return (
-    <main className="min-h-screen p-10 bg-gray-50/50">
-      {/* Usamos um fundo levemente cinza para o card branco "saltar" da tela */}
+    <main
+      className={
+        settings.darkMode
+          ? "min-h-screen p-10 bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white"
+          : "min-h-screen p-10 bg-gray-100"
+      }
+    >
+      <div className="max-w-7xl mx-auto">
+        <SettingsMenu settings={settings} setSettings={setSettings} />
 
-      <div className="max-w-7xl mx-auto flex flex-wrap gap-8 items-start justify-center">
-        <AnimatePresence>
-          {monsterList.map((m) => (
-            <MonsterCard key={m.address} monster={m} />
-          ))}
-        </AnimatePresence>
-
-        {monsterList.length === 0 && (
-          <div className="flex flex-col items-center opacity-20 mt-20">
-            <img src="/logo_eye.png" className="w-32 grayscale mb-4" />
-            <p className="font-black italic text-2xl uppercase tracking-[0.2em]">
-              Wyvern Eye Active
-            </p>
-          </div>
-        )}
+        <div className="flex flex-wrap gap-8 justify-center mt-8">
+          <AnimatePresence>
+            {monsterList.map((m) =>
+              settings.darkMode ? (
+                <MonsterCardDark
+                  key={m.address}
+                  monster={m}
+                  settings={settings}
+                />
+              ) : (
+                <MonsterCardLight
+                  key={m.address}
+                  monster={m}
+                  settings={settings}
+                />
+              ),
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </main>
   );

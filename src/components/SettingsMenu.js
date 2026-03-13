@@ -1,26 +1,66 @@
+import { motion } from "framer-motion";
+
 export default function SettingsMenu({ settings, setSettings }) {
-  const toggle = (key) => setSettings({ ...settings, [key]: !settings[key] });
+  const toggle = (key) =>
+    setSettings((prev) => ({ ...prev, [key]: !prev[key] }));
+
+  const Button = ({ label, icon, active, onClick, color }) => (
+    <motion.button
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.08 }}
+      onClick={onClick}
+      className={`
+        flex items-center gap-2 px-4 py-2 rounded-xl border transition-all duration-300
+        backdrop-blur-xl shadow-lg
+        ${
+          active
+            ? `bg-gradient-to-r ${color} text-white border-transparent`
+            : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10"
+        }
+      `}
+    >
+      <span className="text-lg">{icon}</span>
+      <span className="text-xs font-black uppercase tracking-widest">
+        {label}
+      </span>
+    </motion.button>
+  );
 
   return (
-    <div className="flex gap-4 p-2 bg-white/5 rounded-lg mb-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-      <button
-        onClick={() => toggle("showStatus")}
-        className={`px-3 py-1 rounded transition ${settings.showStatus ? "bg-red-600 text-white" : "hover:bg-white/10"}`}
-      >
-        Status
-      </button>
-      <button
-        onClick={() => toggle("showRage")}
-        className={`px-3 py-1 rounded transition ${settings.showRage ? "bg-orange-600 text-white" : "hover:bg-white/10"}`}
-      >
-        Rage
-      </button>
-      <button
-        onClick={() => toggle("showMinions")}
-        className={`px-3 py-1 rounded transition ${settings.showMinions ? "bg-blue-600 text-white" : "hover:bg-white/10"}`}
-      >
-        Minions
-      </button>
+    <div className="flex justify-center">
+      <div className="flex gap-4 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+        <Button
+          label="Status"
+          icon="☠️"
+          active={settings.showStatus}
+          color="from-red-500 to-red-700"
+          onClick={() => toggle("showStatus")}
+        />
+
+        <Button
+          label="Rage"
+          icon="🔥"
+          active={settings.showRage}
+          color="from-orange-500 to-orange-700"
+          onClick={() => toggle("showRage")}
+        />
+
+        <Button
+          label="Minions"
+          icon="👹"
+          active={settings.showMinions}
+          color="from-blue-500 to-blue-700"
+          onClick={() => toggle("showMinions")}
+        />
+
+        <Button
+          label={settings.darkMode ? "Dark Mode" : "Light Mode"}
+          icon="🌗"
+          active={settings.darkMode}
+          color="from-purple-500 to-indigo-700"
+          onClick={() => toggle("darkMode")}
+        />
+      </div>
     </div>
   );
 }
