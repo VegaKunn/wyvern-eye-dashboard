@@ -163,6 +163,19 @@ Your contribution helps keep the project alive and improving.
 
 --
 
+## 🎮 Current Compatibility
+
+At the moment, this project is fully working with **Monster Hunter 3 Ultimate**.
+
+Support for other titles in the franchise is already planned and under development.
+In the future, the overlay will also be available for **Monster Hunter 4 Ultimate**, as well as potential adaptations for other versions of the series.
+
+The goal is to gradually expand compatibility while ensuring stability and quality for each new implementation.
+
+Stay tuned for updates and new releases 🚀
+
+--
+
 # 🇧🇷 Versão em Português
 
 ## 🐉 Wyvern Eye Overlay
@@ -330,3 +343,14 @@ Chave PIX (aleatória):
 
 Muito obrigado pelo apoio 🙏
 Seu incentivo ajuda a manter o projeto ativo e em constante evolução.
+
+## 🎮 Compatibilidade Atual
+
+Atualmente, o projeto está funcionando com **Monster Hunter 3 Ultimate**.
+
+O suporte para outras versões da franquia já está em planejamento e desenvolvimento.
+No futuro, o overlay também estará disponível para **Monster Hunter 4 Ultimate**, além de possíveis adaptações para outras versões da série.
+
+O objetivo é expandir gradualmente a compatibilidade, garantindo estabilidade e qualidade em cada nova implementação.
+
+Acompanhe o projeto para novidades e atualizações 🚀
