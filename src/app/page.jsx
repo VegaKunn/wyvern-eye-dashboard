@@ -5,7 +5,7 @@ import SettingsMenu from "@/components/SettingsMenu";
 import MonsterCardDark from "@/components/MonsterCardDark";
 import MonsterCardLight from "@/components/MonsterCardLight";
 import { AnimatePresence } from "framer-motion";
-import DexModal from "@/components/DexModal";
+import DexModal from "@/components/Dex/DexModal";
 
 const MONSTER_TTL = 3000; // tempo sem update pra sumir
 const CLEAN_INTERVAL = 1000;
