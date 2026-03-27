@@ -5,12 +5,14 @@ import SettingsMenu from "@/components/SettingsMenu";
 import MonsterCardDark from "@/components/MonsterCardDark";
 import MonsterCardLight from "@/components/MonsterCardLight";
 import { AnimatePresence } from "framer-motion";
+import DexModal from "@/components/DexModal";
 
 const MONSTER_TTL = 3000; // tempo sem update pra sumir
 const CLEAN_INTERVAL = 1000;
 
 export default function Home() {
   const [monsters, setMonsters] = useState({});
+  const [dexOpen, setDexOpen] = useState(false);
   const [settings, setSettings] = useState({
     showStatus: true,
     showRage: true,
@@ -91,6 +93,26 @@ export default function Home() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* 🔥 BOTÃO DEX FIXO */}
+      <button
+        onClick={() => setDexOpen(true)}
+        className={`
+        fixed bottom-6 right-6 z-50
+        px-5 py-3 rounded-2xl font-black tracking-wide
+        shadow-xl transition-all duration-300
+        ${
+          settings.darkMode
+            ? "bg-red-600 hover:bg-red-500 text-white"
+            : "bg-red-500 hover:bg-red-600 text-white"
+        }
+      `}
+      >
+        DEX 📖
+      </button>
+
+      {/* 🔥 MODAL */}
+      <DexModal open={dexOpen} onClose={() => setDexOpen(false)} />
     </main>
   );
 }
