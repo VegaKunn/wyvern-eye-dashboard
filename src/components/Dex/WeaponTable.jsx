@@ -3,23 +3,42 @@ import { useState, useMemo } from "react";
 
 export default function WeaponTable({ craftingData, loading }) {
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedElement, setSelectedElement] = useState("All");
   const [selectedWeaponName, setSelectedWeaponName] = useState("");
 
-  // 1. Pega as categorias disponíveis (Keys do JSON)
+  // 1. Categorias (Keys do JSON)
   const categories = useMemo(() => {
     return craftingData ? Object.keys(craftingData) : [];
   }, [craftingData]);
 
-  // 2. Pega as armas da categoria selecionada
+  // 2. Armas da categoria selecionada
   const weaponsInCategory = useMemo(() => {
     if (!selectedCategory || !craftingData) return [];
     return craftingData[selectedCategory];
   }, [selectedCategory, craftingData]);
 
-  // 3. Encontra o objeto da arma selecionada para renderizar
+  // 3. Extrair elementos únicos presentes nessa categoria
+  const availableElements = useMemo(() => {
+    if (weaponsInCategory.length === 0) return [];
+    const elements = new Set();
+    weaponsInCategory.forEach((w) => {
+      elements.add(w.element || "None");
+    });
+    return Array.from(elements).sort();
+  }, [weaponsInCategory]);
+
+  // 4. Filtrar armas pelo elemento selecionado
+  const filteredWeapons = useMemo(() => {
+    if (selectedElement === "All") return weaponsInCategory;
+    return weaponsInCategory.filter(
+      (w) => (w.element || "None") === selectedElement,
+    );
+  }, [selectedElement, weaponsInCategory]);
+
+  // 5. Dados da arma final
   const selectedWeaponData = useMemo(() => {
-    return weaponsInCategory.find((w) => w.name === selectedWeaponName);
-  }, [selectedWeaponName, weaponsInCategory]);
+    return filteredWeapons.find((w) => w.name === selectedWeaponName);
+  }, [selectedWeaponName, filteredWeapons]);
 
   if (loading) return <p className="text-gray-600">Carregando...</p>;
   if (!craftingData)
@@ -27,21 +46,22 @@ export default function WeaponTable({ craftingData, loading }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-col sm:flex-row gap-4">
-        {/* SELECT DE CATEGORIA */}
-        <div className="flex-1">
-          <label className="block text-xs font-bold text-gray-500 uppercase mb-1 ml-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* SELECT 1: CATEGORIA */}
+        <div>
+          <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1 ml-1">
             Tipo de Arma
           </label>
           <select
-            className="border border-gray-300 p-2 w-full rounded-lg text-gray-800 bg-white shadow-sm"
+            className="border border-gray-300 p-2 w-full rounded-lg text-gray-800 bg-white shadow-sm focus:ring-2 focus:ring-red-500 outline-none"
             value={selectedCategory}
             onChange={(e) => {
               setSelectedCategory(e.target.value);
-              setSelectedWeaponName(""); // Reseta a arma ao mudar categoria
+              setSelectedElement("All");
+              setSelectedWeaponName("");
             }}
           >
-            <option value="">Selecione um tipo...</option>
+            <option value="">Selecione o tipo...</option>
             {categories.map((cat) => (
               <option key={cat} value={cat}>
                 {cat}
@@ -50,21 +70,44 @@ export default function WeaponTable({ craftingData, loading }) {
           </select>
         </div>
 
-        {/* SELECT DE ARMA (SÓ APARECE SE HOUVER CATEGORIA) */}
-        <div className="flex-1">
-          <label className="block text-xs font-bold text-gray-500 uppercase mb-1 ml-1">
-            Ramificação / Arma
+        {/* SELECT 2: ELEMENTO */}
+        <div>
+          <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1 ml-1">
+            Elemento
+          </label>
+          <select
+            className="border border-gray-300 p-2 w-full rounded-lg text-gray-800 bg-white shadow-sm disabled:opacity-50"
+            value={selectedElement}
+            onChange={(e) => {
+              setSelectedElement(e.target.value);
+              setSelectedWeaponName("");
+            }}
+            disabled={!selectedCategory}
+          >
+            <option value="All">Todos os Elementos</option>
+            {availableElements.map((el) => (
+              <option key={el} value={el}>
+                {el}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* SELECT 3: ARMA */}
+        <div>
+          <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1 ml-1">
+            Arma
           </label>
           <select
             className="border border-gray-300 p-2 w-full rounded-lg text-gray-800 bg-white shadow-sm disabled:opacity-50"
             value={selectedWeaponName}
             onChange={(e) => setSelectedWeaponName(e.target.value)}
-            disabled={!selectedCategory}
+            disabled={filteredWeapons.length === 0}
           >
             <option value="">Selecione a arma...</option>
-            {weaponsInCategory.map((weapon, idx) => (
+            {filteredWeapons.map((weapon, idx) => (
               <option key={idx} value={weapon.name}>
-                {weapon.name} (ATK: {weapon.attack})
+                {weapon.name}
               </option>
             ))}
           </select>
@@ -73,97 +116,83 @@ export default function WeaponTable({ craftingData, loading }) {
 
       <hr className="my-2 border-gray-100" />
 
-      {/* RENDERIZAÇÃO DA ARMA SELECIONADA */}
+      {/* DETALHES DA ARMA */}
       {selectedWeaponData ? (
-        <div className="rounded-xl border border-gray-200 overflow-hidden bg-white shadow-md animate-in fade-in slide-in-from-top-2 duration-300">
-          {/* Header da Arma */}
-          <div className="bg-gray-800 text-white px-4 py-3 flex justify-between items-center">
+        <div className="rounded-xl border border-gray-200 overflow-hidden bg-white shadow-md">
+          {/* Header */}
+          <div className="bg-gray-900 text-white px-5 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <h3 className="font-bold text-lg leading-tight">
-                {selectedWeaponData.name}
-              </h3>
-              <p className="text-[10px] text-gray-400 uppercase tracking-widest">
+              <p className="text-[10px] text-red-500 font-bold uppercase tracking-tighter mb-1">
                 {selectedCategory}
               </p>
+              <h3 className="font-bold text-xl leading-none">
+                {selectedWeaponData.name}
+              </h3>
             </div>
-            <div className="flex gap-4 text-sm bg-black/20 px-3 py-1 rounded-lg">
-              <div className="flex flex-col items-center">
-                <span className="text-[10px] text-gray-400 uppercase">
-                  Ataque
-                </span>
-                <span className="font-bold">{selectedWeaponData.attack}</span>
+
+            <div className="flex gap-3">
+              <div className="bg-white/10 p-2 rounded text-center min-w-[60px]">
+                <p className="text-[9px] uppercase text-gray-400">Atk</p>
+                <p className="font-bold text-lg">{selectedWeaponData.attack}</p>
               </div>
               {selectedWeaponData.element && (
-                <div className="flex flex-col items-center border-x border-white/10 px-4">
-                  <span className="text-[10px] text-gray-400 uppercase">
+                <div className="bg-blue-500/20 p-2 rounded text-center min-w-[80px] border border-blue-500/30">
+                  <p className="text-[9px] uppercase text-blue-300">
                     {selectedWeaponData.element}
-                  </span>
-                  <span className="font-bold text-blue-300">
+                  </p>
+                  <p className="font-bold text-lg text-blue-100">
                     {selectedWeaponData.elementValue}
-                  </span>
+                  </p>
                 </div>
               )}
-              <div className="flex flex-col items-center">
-                <span className="text-[10px] text-gray-400 uppercase">
-                  Slots
-                </span>
-                <span className="font-bold">{selectedWeaponData.slots}</span>
+              <div className="bg-white/10 p-2 rounded text-center min-w-[60px]">
+                <p className="text-[9px] uppercase text-gray-400">Slots</p>
+                <p className="font-bold text-lg">{selectedWeaponData.slots}</p>
               </div>
             </div>
           </div>
 
-          {/* Tabela de Materiais */}
-          <table className="w-full text-sm">
-            <thead className="bg-gray-50 text-gray-600 border-b border-gray-100">
-              <tr>
-                <th className="text-left px-4 py-3 font-semibold">Método</th>
-                <th className="text-left px-4 py-3 font-semibold">
-                  Materiais Necessários
-                </th>
-              </tr>
-            </thead>
-            <tbody>
+          {/* Materiais */}
+          <div className="p-4">
+            <h4 className="text-xs font-bold text-gray-400 uppercase mb-3 px-1">
+              Materiais de Forja
+            </h4>
+            <div className="space-y-3">
               {selectedWeaponData.materials.map((matGroup, mIdx) => (
-                <tr
+                <div
                   key={mIdx}
-                  className="border-b last:border-0 border-gray-50"
+                  className="border border-gray-100 rounded-lg overflow-hidden"
                 >
-                  <td className="px-4 py-4 align-top w-32">
-                    <span
-                      className={`text-[10px] uppercase font-black px-2.5 py-1 rounded-md ${
-                        matGroup.type === "create"
-                          ? "bg-green-100 text-green-700 border border-green-200"
-                          : "bg-orange-100 text-orange-700 border border-orange-200"
-                      }`}
-                    >
-                      {matGroup.type === "create" ? "Criação" : "Melhoria"}
-                    </span>
-                  </td>
-                  <td className="px-4 py-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {matGroup.items.map((i, iIdx) => (
-                        <div
-                          key={iIdx}
-                          className="flex justify-between items-center bg-gray-50 p-2 rounded-lg border border-gray-100"
-                        >
-                          <span className="text-gray-700 font-medium">
-                            {i.item}
-                          </span>
-                          <span className="bg-gray-200 text-gray-800 px-2 py-0.5 rounded text-xs font-bold">
-                            x{i.qty}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </td>
-                </tr>
+                  <div
+                    className={`px-3 py-1 text-[10px] font-bold uppercase ${
+                      matGroup.type === "create"
+                        ? "bg-green-50 text-green-700"
+                        : "bg-orange-50 text-orange-700"
+                    }`}
+                  >
+                    {matGroup.type === "create"
+                      ? "Criação Direta"
+                      : "Melhoria (Upgrade)"}
+                  </div>
+                  <div className="p-3 grid grid-cols-1 sm:grid-cols-2 gap-2 bg-gray-50/50">
+                    {matGroup.items.map((i, iIdx) => (
+                      <div
+                        key={iIdx}
+                        className="flex justify-between items-center bg-white border border-gray-100 p-2 rounded shadow-sm"
+                      >
+                        <span className="text-sm text-gray-700">{i.item}</span>
+                        <span className="font-bold text-red-600">x{i.qty}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </div>
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center py-20 text-gray-400 border-2 border-dashed border-gray-100 rounded-2xl">
-          <p>Escolha o tipo e a arma acima para ver os detalhes de forja.</p>
+        <div className="flex flex-col items-center justify-center py-24 text-gray-300 italic border-2 border-dashed border-gray-50 rounded-2xl">
+          Selecione os filtros acima para exibir os materiais.
         </div>
       )}
     </div>
