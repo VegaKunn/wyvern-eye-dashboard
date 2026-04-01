@@ -1,0 +1,3263 @@
+{
+  "Great Sword": [
+    {
+      "name": "Iron Sword",
+      "attack": 336,
+      "element": "Ice",
+      "elementValue": 50,
+      "slots": 1,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Iron Ore",
+              "qty": 3
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Iron Sword+",
+          "attack": 384,
+          "element": "Ice",
+          "elementValue": 80,
+          "slots": 1,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Iron Ore",
+                  "qty": 5
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Buster Sword",
+              "attack": 432,
+              "element": "Ice",
+              "elementValue": 120,
+              "slots": 1,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Machalite Ore",
+                      "qty": 1
+                    },
+                    {
+                      "item": "Iron Ore",
+                      "qty": 8
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Buster Sword+",
+                  "attack": 528,
+                  "element": "Ice",
+                  "elementValue": 150,
+                  "slots": 2,
+                  "materials": [
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Pelagicite Ore",
+                          "qty": 3
+                        },
+                        {
+                          "item": "Machalite Ore",
+                          "qty": 2
+                        },
+                        {
+                          "item": "Iron Ore",
+                          "qty": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Buster Blade",
+                      "attack": 624,
+                      "element": "Ice",
+                      "elementValue": 180,
+                      "slots": 3,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Isisium",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Pelagicite Ore",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Earth Crystal",
+                              "qty": 10
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Ravager Blade",
+                          "attack": 672,
+                          "element": "Ice",
+                          "elementValue": 210,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "create",
+                              "items": [
+                                {
+                                  "item": "Dragonite Ore",
+                                  "qty": 8
+                                },
+                                {
+                                  "item": "Isisium",
+                                  "qty": 10
+                                },
+                                {
+                                  "item": "Pelagicite Ore",
+                                  "qty": 20
+                                }
+                              ]
+                            },
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Dragonite Ore",
+                                  "qty": 5
+                                },
+                                {
+                                  "item": "Machalite Ore",
+                                  "qty": 15
+                                },
+                                {
+                                  "item": "Ice Crystal",
+                                  "qty": 15
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Ravager Blade+",
+                              "attack": 768,
+                              "element": "Ice",
+                              "elementValue": 250,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Dragonite Ore",
+                                      "qty": 10
+                                    },
+                                    {
+                                      "item": "Gracium",
+                                      "qty": 3
+                                    },
+                                    {
+                                      "item": "Diablos Marrow",
+                                      "qty": 1
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Lacerator Blade",
+                                  "attack": 1056,
+                                  "element": "Ice",
+                                  "elementValue": 330,
+                                  "slots": 8,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Fucium Ore",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Barioth Talon",
+                                          "qty": 3
+                                        },
+                                        {
+                                          "item": "Eltalite Ore",
+                                          "qty": 10
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Devastator Blade",
+                                      "attack": 1200,
+                                      "element": "Ice",
+                                      "elementValue": 410,
+                                      "slots": 9,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Rathalos Cortex",
+                                              "qty": 7
+                                            },
+                                            {
+                                              "item": "Rath Ripper",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Meldspar Ore",
+                                              "qty": 3
+                                            },
+                                            {
+                                              "item": "G.Agnak Talon",
+                                              "qty": 1
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Chrome Razor",
+                                  "attack": 1008,
+                                  "element": "Poison",
+                                  "elementValue": 600,
+                                  "slots": 8,
+                                  "materials": [
+                                    {
+                                      "type": "create",
+                                      "items": [
+                                        {
+                                          "item": "Gigginox Talon",
+                                          "qty": 4
+                                        },
+                                        {
+                                          "item": "Fey Wyvern Gem",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Meldspar Ore",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Eltalite Ore",
+                                          "qty": 15
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Gigginox Talon",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Fey Wyvern Gem",
+                                          "qty": 1
+                                        },
+                                        {
+                                          "item": "Meldspar Ore",
+                                          "qty": 3
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Chrome Quietus",
+                                      "attack": 1152,
+                                      "element": "Poison",
+                                      "elementValue": 750,
+                                      "slots": 9,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "A.Rath Cortex",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "Diablos Chine",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Purecrystal",
+                                              "qty": 1
+                                            },
+                                            {
+                                              "item": "Rathian Surspike",
+                                              "qty": 2
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Brazenwall",
+                              "attack": 912,
+                              "element": "Fire",
+                              "elementValue": 200,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Volvi Carapace",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Uragaan Scute",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Uragaan Shell",
+                                      "qty": 10
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Hidden Blade",
+                                  "attack": 864,
+                                  "element": "Para",
+                                  "elementValue": 160,
+                                  "slots": 6,
+                                  "materials": [
+                                    {
+                                      "type": "create",
+                                      "items": [
+                                        {
+                                          "item": "Narga Razor",
+                                          "qty": 7
+                                        },
+                                        {
+                                          "item": "Nargacuga Pelt+",
+                                          "qty": 7
+                                        },
+                                        {
+                                          "item": "Nargacuga Scale+",
+                                          "qty": 10
+                                        },
+                                        {
+                                          "item": "Narga Medulla",
+                                          "qty": 2
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Narga Razor",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Nargacuga Pelt+",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Nargacuga Scale+",
+                                          "qty": 8
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Dark of Night",
+                                      "attack": 1008,
+                                      "element": "Para",
+                                      "elementValue": 220,
+                                      "slots": 9,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Narga Razor+",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Nargacuga Fur",
+                                              "qty": 8
+                                            },
+                                            {
+                                              "item": "Narga Medulla",
+                                              "qty": 1
+                                            },
+                                            {
+                                              "item": "Eltalite Ore",
+                                              "qty": 10
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Avidya Great Sword",
+                                          "attack": 1104,
+                                          "element": "Para",
+                                          "elementValue": 300,
+                                          "slots": 9,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "Hvy Narga Fang",
+                                                  "qty": 3
+                                                },
+                                                {
+                                                  "item": "Narga Tailspear",
+                                                  "qty": 3
+                                                },
+                                                {
+                                                  "item": "Nargacuga Mantle",
+                                                  "qty": 1
+                                                },
+                                                {
+                                                  "item": "S.Barioth Talon",
+                                                  "qty": 4
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Crimsonwall",
+                                  "attack": 1104,
+                                  "element": "Fire",
+                                  "elementValue": 250,
+                                  "slots": 6,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Uragaan Scale+",
+                                          "qty": 10
+                                        },
+                                        {
+                                          "item": "Uragaan Ruby",
+                                          "qty": 1
+                                        },
+                                        {
+                                          "item": "S.Urag Carapace",
+                                          "qty": 5
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Cragscliff",
+                                      "attack": 1296,
+                                      "element": "Fire",
+                                      "elementValue": 310,
+                                      "slots": 9,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Uragaan Shard",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Uragaan Scute+",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "S.Uragaan Cortex",
+                                              "qty": 5
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Goliath's Scream",
+                                          "attack": 1440,
+                                          "element": "Fire",
+                                          "elementValue": 350,
+                                          "slots": 9,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "S.Uragaan Shard",
+                                                  "qty": 6
+                                                },
+                                                {
+                                                  "item": "S.Uragaan Scute+",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "Uragaan Pallium",
+                                                  "qty": 1
+                                                },
+                                                {
+                                                  "item": "Allfire Stone",
+                                                  "qty": 3
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Type 41 Wyvernator",
+                          "attack": 672,
+                          "element": "Water",
+                          "elementValue": 200,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Nibelsnarf Shell",
+                                  "qty": 4
+                                },
+                                {
+                                  "item": "Nibelsnarf Hide",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Dragonite Ore",
+                                  "qty": 3
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Remalgalypse",
+                              "attack": 768,
+                              "element": "Water",
+                              "elementValue": 280,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Nibelsnarf Scalp",
+                                      "qty": 1
+                                    },
+                                    {
+                                      "item": "Nibelsnarf Claw",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Gracium",
+                                      "qty": 5
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Remalgagorgon",
+                                  "attack": 1056,
+                                  "element": "Water",
+                                  "elementValue": 400,
+                                  "slots": 8,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Nibel Cortex",
+                                          "qty": 6
+                                        },
+                                        {
+                                          "item": "Nibelsnarf Talon",
+                                          "qty": 3
+                                        },
+                                        {
+                                          "item": "Nibelsnarf Hide+",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Dazzling Fluid",
+                                          "qty": 3
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Rugged Great Sword",
+                  "attack": 528,
+                  "element": "Sleep",
+                  "elementValue": 110,
+                  "slots": 1,
+                  "materials": [
+                    {
+                      "type": "create",
+                      "items": [
+                        {
+                          "item": "G.Jaggi Claw",
+                          "qty": 6
+                        },
+                        {
+                          "item": "G.Jaggi Hide",
+                          "qty": 3
+                        },
+                        {
+                          "item": "Machalite Ore",
+                          "qty": 6
+                        }
+                      ]
+                    },
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "G.Jaggi Claw",
+                          "qty": 4
+                        },
+                        {
+                          "item": "Jaggi Hide",
+                          "qty": 8
+                        },
+                        {
+                          "item": "Machalite Ore",
+                          "qty": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Chieftain's Grt Sword",
+                      "children": [
+                        {
+                          "name": "High Chief's Grt Sword",
+                          "children": []
+                        },
+                        {
+                          "name": "Lagiacrus Blade",
+                          "attack": 624,
+                          "element": "Thunder",
+                          "elementValue": 80,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "create",
+                              "items": [
+                                {
+                                  "item": "Lagiacrus Tail",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Lagiacrus Horn",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Lagiacrus Scale",
+                                  "qty": 5
+                                },
+                                {
+                                  "item": "Monster Bone+",
+                                  "qty": 2
+                                }
+                              ]
+                            },
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Lagiacrus Tail",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Lagiacrus Claw",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Lagiacrus Scale",
+                                  "qty": 4
+                                },
+                                {
+                                  "item": "Lightcrystal",
+                                  "qty": 1
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Lagiacrus Blade+",
+                              "attack": 720,
+                              "element": "Thunder",
+                              "elementValue": 130,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Shell Shocker",
+                                      "qty": 3
+                                    },
+                                    {
+                                      "item": "Lagiacrus Claw",
+                                      "qty": 8
+                                    },
+                                    {
+                                      "item": "Voltstone",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "High Lagia Blade",
+                                  "attack": 768,
+                                  "element": "Thunder",
+                                  "elementValue": 170,
+                                  "slots": 4,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Lagiacrus Horn",
+                                          "qty": 3
+                                        },
+                                        {
+                                          "item": "Monster Keenbone",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Lagiacrus Plate",
+                                          "qty": 1
+                                        },
+                                        {
+                                          "item": "Thunder Sac",
+                                          "qty": 5
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Lagia Lightning",
+                                      "attack": 864,
+                                      "element": "Thunder",
+                                      "elementValue": 210,
+                                      "slots": 5,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Lagiacrus Claw+",
+                                              "qty": 2
+                                            },
+                                            {
+                                              "item": "Lagiacrus Horn+",
+                                              "qty": 2
+                                            },
+                                            {
+                                              "item": "Lagiacrus Scale+",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Wyvern Stone",
+                                              "qty": 1
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Lagia Wildfire",
+                                          "attack": 960,
+                                          "element": "Thunder",
+                                          "elementValue": 250,
+                                          "slots": 6,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "Shell Shocker+",
+                                                  "qty": 3
+                                                },
+                                                {
+                                                  "item": "Lagiacrus Claw+",
+                                                  "qty": 3
+                                                },
+                                                {
+                                                  "item": "Lagia Sapphire",
+                                                  "qty": 1
+                                                },
+                                                {
+                                                  "item": "G.Agnak Hide+",
+                                                  "qty": 4
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": [
+                                            {
+                                              "name": "Neo Lagia Blade",
+                                              "attack": 1104,
+                                              "element": "Thunder",
+                                              "elementValue": 310,
+                                              "slots": 9,
+                                              "materials": [
+                                                {
+                                                  "type": "upgrade",
+                                                  "items": [
+                                                    {
+                                                      "item": "I.Lagi D-Shocker",
+                                                      "qty": 2
+                                                    },
+                                                    {
+                                                      "item": "I.Lagi Hardhorn",
+                                                      "qty": 2
+                                                    },
+                                                    {
+                                                      "item": "I.Lagi Shard",
+                                                      "qty": 5
+                                                    },
+                                                    {
+                                                      "item": "Lagiacrus Talon",
+                                                      "qty": 3
+                                                    }
+                                                  ]
+                                                }
+                                              ],
+                                              "children": [
+                                                {
+                                                  "name": "Lagia Fulmination",
+                                                  "attack": 1248,
+                                                  "element": "Thunder",
+                                                  "elementValue": 400,
+                                                  "slots": 9,
+                                                  "materials": [
+                                                    {
+                                                      "type": "upgrade",
+                                                      "items": [
+                                                        {
+                                                          "item": "I.Lagi Hardhorn",
+                                                          "qty": 3
+                                                        },
+                                                        {
+                                                          "item": "I.Lagi Piel",
+                                                          "qty": 8
+                                                        },
+                                                        {
+                                                          "item": "Lagiacrus Mantle",
+                                                          "qty": 1
+                                                        },
+                                                        {
+                                                          "item": "Lagia Sapphire",
+                                                          "qty": 2
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Usurper's Storm",
+                                      "attack": 768,
+                                      "element": "Thunder",
+                                      "elementValue": 250,
+                                      "slots": 5,
+                                      "materials": [
+                                        {
+                                          "type": "create",
+                                          "items": [
+                                            {
+                                              "item": "Zinogre Carapace",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "Zinogre Horn+",
+                                              "qty": 3
+                                            },
+                                            {
+                                              "item": "Zinogre Shocker+",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "Zin Electrofur",
+                                              "qty": 2
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Zinogre Carapace",
+                                              "qty": 3
+                                            },
+                                            {
+                                              "item": "Zinogre Horn+",
+                                              "qty": 2
+                                            },
+                                            {
+                                              "item": "Zinogre Shocker+",
+                                              "qty": 3
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Despot's Blackstorm",
+                                          "attack": 864,
+                                          "element": "Thunder",
+                                          "elementValue": 300,
+                                          "slots": 6,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "Zinogre Carapace",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "Zinogre Shocker+",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "Zinogre Jasper",
+                                                  "qty": 1
+                                                },
+                                                {
+                                                  "item": "Nargacuga Fang+",
+                                                  "qty": 3
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": [
+                                            {
+                                              "name": "Oppressor's Forger",
+                                              "attack": 960,
+                                              "element": "Thunder",
+                                              "elementValue": 400,
+                                              "slots": 9,
+                                              "materials": [
+                                                {
+                                                  "type": "upgrade",
+                                                  "items": [
+                                                    {
+                                                      "item": "Zinogre Cortex",
+                                                      "qty": 3
+                                                    },
+                                                    {
+                                                      "item": "Zinogre Hardhorn",
+                                                      "qty": 2
+                                                    },
+                                                    {
+                                                      "item": "Zin D-Shocker",
+                                                      "qty": 4
+                                                    },
+                                                    {
+                                                      "item": "Zinogre Lash",
+                                                      "qty": 1
+                                                    }
+                                                  ]
+                                                }
+                                              ],
+                                              "children": [
+                                                {
+                                                  "name": "Orcus Tonitrus",
+                                                  "attack": 1008,
+                                                  "element": "Thunder",
+                                                  "elementValue": 570,
+                                                  "slots": 9,
+                                                  "materials": [
+                                                    {
+                                                      "type": "upgrade",
+                                                      "items": [
+                                                        {
+                                                          "item": "Zinogre Talon",
+                                                          "qty": 4
+                                                        },
+                                                        {
+                                                          "item": "Zin Electrofur+",
+                                                          "qty": 5
+                                                        },
+                                                        {
+                                                          "item": "Zin Skymerald",
+                                                          "qty": 1
+                                                        },
+                                                        {
+                                                          "item": "Zinogre Lash",
+                                                          "qty": 3
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "name": "Nether Greatsword",
+                                                      "children": [
+                                                        {
+                                                          "name": "Nether",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "Brimstren Drakepride",
+                                                  "attack": 1104,
+                                                  "element": "Dragon",
+                                                  "elementValue": 400,
+                                                  "slots": 9,
+                                                  "materials": [
+                                                    {
+                                                      "type": "upgrade",
+                                                      "items": [
+                                                        {
+                                                          "item": "S.Zin Cortex",
+                                                          "qty": 4
+                                                        },
+                                                        {
+                                                          "item": "S.Zin Dragonhair",
+                                                          "qty": 5
+                                                        },
+                                                        {
+                                                          "item": "S.Zinogre Talon",
+                                                          "qty": 3
+                                                        },
+                                                        {
+                                                          "item": "S.Zin Hardhorn",
+                                                          "qty": 2
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "name": "Stygian Acedia",
+                                                      "attack": 1248,
+                                                      "element": "Dragon",
+                                                      "elementValue": 480,
+                                                      "slots": 10,
+                                                      "materials": [
+                                                        {
+                                                          "type": "upgrade",
+                                                          "items": [
+                                                            {
+                                                              "item": "S.Zinogre Lash",
+                                                              "qty": 3
+                                                            },
+                                                            {
+                                                              "item": "S.Zin Dragnshell",
+                                                              "qty": 6
+                                                            },
+                                                            {
+                                                              "item": "S.Zin Skymerald",
+                                                              "qty": 1
+                                                            },
+                                                            {
+                                                              "item": "Ghostly Quartz",
+                                                              "qty": 2
+                                                            }
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Carapace Sword",
+                      "attack": 576,
+                      "element": "Water",
+                      "elementValue": 100,
+                      "slots": 2,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Barroth Claw",
+                              "qty": 2
+                            },
+                            {
+                              "item": "Barroth Ridge",
+                              "qty": 3
+                            },
+                            {
+                              "item": "Killer Beetle",
+                              "qty": 5
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Carapace Blade",
+                          "attack": 672,
+                          "element": "Water",
+                          "elementValue": 150,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Barroth Scalp",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Barroth Tail",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Nibelsnarf Shell",
+                                  "qty": 6
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Barroth Smasher",
+                              "attack": 816,
+                              "element": null,
+                              "elementValue": null,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Barroth Carapace",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Barroth Claw+",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Wyvern Stone",
+                                      "qty": 1
+                                    },
+                                    {
+                                      "item": "Fucium Ore",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Aurora Blade",
+                                  "attack": 960,
+                                  "element": "Ice",
+                                  "elementValue": 350,
+                                  "slots": 6,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "J.Barroth Ridge+",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "J.Barroth Tail",
+                                          "qty": 3
+                                        },
+                                        {
+                                          "item": "Rare Scarab",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Dewy Pleura+",
+                                          "qty": 1
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Northern Lights",
+                                      "attack": 960,
+                                      "element": "Ice",
+                                      "elementValue": 450,
+                                      "slots": 8,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "J.Barroth Crown",
+                                              "qty": 2
+                                            },
+                                            {
+                                              "item": "J.Barroth Talon",
+                                              "qty": 3
+                                            },
+                                            {
+                                              "item": "Duram Hardhorn",
+                                              "qty": 2
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Northern Cross",
+                                          "attack": 1152,
+                                          "element": "Ice",
+                                          "elementValue": 520,
+                                          "slots": 9,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "J.Barroth Cortex",
+                                                  "qty": 6
+                                                },
+                                                {
+                                                  "item": "J.Barroth Lash",
+                                                  "qty": 3
+                                                },
+                                                {
+                                                  "item": "J.Barroth Chine",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "Drenched Pleura",
+                                                  "qty": 3
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Viking Hornsword",
+                              "attack": 768,
+                              "element": "Water",
+                              "elementValue": 250,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "create",
+                                  "items": [
+                                    {
+                                      "item": "Crooked Horn",
+                                      "qty": 3
+                                    },
+                                    {
+                                      "item": "Ceadeus Hide",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Luminous Organ",
+                                      "qty": 2
+                                    },
+                                    {
+                                      "item": "Carbalite Ore",
+                                      "qty": 4
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Crooked Horn",
+                                      "qty": 2
+                                    },
+                                    {
+                                      "item": "Ceadeus Tail",
+                                      "qty": 2
+                                    },
+                                    {
+                                      "item": "Luminous Organ",
+                                      "qty": 3
+                                    },
+                                    {
+                                      "item": "Carbalite Ore",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Ancharius Sword",
+                                  "attack": 1008,
+                                  "element": "Water",
+                                  "elementValue": 450,
+                                  "slots": 7,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Ceadeus Hide",
+                                          "qty": 6
+                                        },
+                                        {
+                                          "item": "Deep Dragongem",
+                                          "qty": 1
+                                        },
+                                        {
+                                          "item": "G.Agnak Claw+",
+                                          "qty": 4
+                                        },
+                                        {
+                                          "item": "Shell Shocker+",
+                                          "qty": 4
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Excalius Sword",
+                                      "attack": 1152,
+                                      "element": "Water",
+                                      "elementValue": 580,
+                                      "slots": 8,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Crooked Hardhorn",
+                                              "qty": 3
+                                            },
+                                            {
+                                              "item": "Dark Dragongem",
+                                              "qty": 1
+                                            },
+                                            {
+                                              "item": "G.Ceadeus Shard",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "Lrg Wyvern Stone",
+                                              "qty": 2
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bone Blade",
+      "attack": 384,
+      "element": "Poison",
+      "elementValue": 100,
+      "slots": 1,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Monster Bone S",
+              "qty": 2
+            },
+            {
+              "item": "Jaggi Hide",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Bone Blade+",
+          "attack": 432,
+          "element": "Poison",
+          "elementValue": 130,
+          "slots": 1,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Monster Bone S",
+                  "qty": 4
+                },
+                {
+                  "item": "Jaggi Hide",
+                  "qty": 2
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Jawblade",
+              "attack": 528,
+              "element": "Poison",
+              "elementValue": 150,
+              "slots": 1,
+              "materials": [
+                {
+                  "type": "create",
+                  "items": [
+                    {
+                      "item": "Jumbo Bone",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Monster Bone M",
+                      "qty": 10
+                    },
+                    {
+                      "item": "Rhenoplos Shell",
+                      "qty": 5
+                    }
+                  ]
+                },
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Jumbo Bone",
+                      "qty": 2
+                    },
+                    {
+                      "item": "Monster Bone M",
+                      "qty": 5
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Giant Jawblade",
+                  "attack": 576,
+                  "element": "Poison",
+                  "elementValue": 200,
+                  "slots": 2,
+                  "materials": [
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Monster Bone L",
+                          "qty": 5
+                        },
+                        {
+                          "item": "Killer Beetle",
+                          "qty": 5
+                        },
+                        {
+                          "item": "Barroth Shell",
+                          "qty": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Red Wing",
+                      "attack": 720,
+                      "element": "Fire",
+                      "elementValue": 160,
+                      "slots": 3,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Rathalos Scale",
+                              "qty": 3
+                            },
+                            {
+                              "item": "Rath Talon",
+                              "qty": 3
+                            },
+                            {
+                              "item": "Flame Sac",
+                              "qty": 2
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Rathalos Firesword",
+                          "attack": 768,
+                          "element": "Fire",
+                          "elementValue": 220,
+                          "slots": 4,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Rathlos Carapace",
+                                  "qty": 8
+                                },
+                                {
+                                  "item": "Rath Medulla",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Monster Keenbone",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Rare Scarab",
+                                  "qty": 3
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Rathalos Flamesword",
+                              "attack": 864,
+                              "element": "Fire",
+                              "elementValue": 280,
+                              "slots": 5,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Rathalos Scale+",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Rathalos Wing",
+                                      "qty": 3
+                                    },
+                                    {
+                                      "item": "Firecell Stone",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Valkyrie Blade",
+                      "attack": 672,
+                      "element": "Poison",
+                      "elementValue": 100,
+                      "slots": 3,
+                      "materials": [
+                        {
+                          "type": "create",
+                          "items": [
+                            {
+                              "item": "Rathian Scale",
+                              "qty": 8
+                            },
+                            {
+                              "item": "Rathian Shell",
+                              "qty": 8
+                            },
+                            {
+                              "item": "Monster Bone L",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Mega Demondrug",
+                              "qty": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Rathian Scale",
+                              "qty": 6
+                            },
+                            {
+                              "item": "Rathian Shell",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Rathian Webbing",
+                              "qty": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Sieglinde",
+                          "attack": 720,
+                          "element": "Poison",
+                          "elementValue": 120,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Rathian Plate",
+                                  "qty": 1
+                                },
+                                {
+                                  "item": "Rathian Spike",
+                                  "qty": 2
+                                },
+                                {
+                                  "item": "Scalding Pleura",
+                                  "qty": 2
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "High Sieglinde",
+                              "attack": 768,
+                              "element": "Poison",
+                              "elementValue": 160,
+                              "slots": 4,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Rathian Scale+",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Rathian Spike+",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Rath Marrow",
+                                      "qty": 2
+                                    },
+                                    {
+                                      "item": "Grim Venom Gland",
+                                      "qty": 1
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Titania",
+                                  "attack": 864,
+                                  "element": "Poison",
+                                  "elementValue": 200,
+                                  "slots": 5,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "P.Rath Carapace",
+                                          "qty": 4
+                                        },
+                                        {
+                                          "item": "P.Rathian Scale+",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Rath Medulla",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Firecell Stone",
+                                          "qty": 2
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Blushing Dame",
+                                      "attack": 960,
+                                      "element": "Poison",
+                                      "elementValue": 240,
+                                      "slots": 6,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "P.Rath Carapace",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "P.Rathian Scale+",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Rathian Ruby",
+                                              "qty": 1
+                                            },
+                                            {
+                                              "item": "Narga Medulla",
+                                              "qty": 1
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": [
+                                        {
+                                          "name": "Ljósálfar",
+                                          "attack": 1056,
+                                          "element": "Poison",
+                                          "elementValue": 300,
+                                          "slots": 9,
+                                          "materials": [
+                                            {
+                                              "type": "upgrade",
+                                              "items": [
+                                                {
+                                                  "item": "A.Rathalos Shard",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "P.Rathian Shard",
+                                                  "qty": 5
+                                                },
+                                                {
+                                                  "item": "Rathian Mantle",
+                                                  "qty": 1
+                                                },
+                                                {
+                                                  "item": "Rathalos Mantle",
+                                                  "qty": 1
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "children": [
+                                            {
+                                              "name": "Brünnhilde",
+                                              "attack": 1200,
+                                              "element": "Poison",
+                                              "elementValue": 380,
+                                              "slots": 10,
+                                              "materials": [
+                                                {
+                                                  "type": "upgrade",
+                                                  "items": [
+                                                    {
+                                                      "item": "P.Rathian Cortex",
+                                                      "qty": 5
+                                                    },
+                                                    {
+                                                      "item": "A.Rath Cortex",
+                                                      "qty": 5
+                                                    },
+                                                    {
+                                                      "item": "S.Rathalos Lash",
+                                                      "qty": 2
+                                                    },
+                                                    {
+                                                      "item": "G.Rath Surspike",
+                                                      "qty": 1
+                                                    }
+                                                  ]
+                                                }
+                                              ],
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Siegmund",
+                          "attack": 768,
+                          "element": "Fire",
+                          "elementValue": 150,
+                          "slots": 3,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Rathalos Shell",
+                                  "qty": 5
+                                },
+                                {
+                                  "item": "Rathalos Tail",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Rathalos Plate",
+                                  "qty": 1
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "High Siegmund",
+                              "attack": 864,
+                              "element": "Fire",
+                              "elementValue": 240,
+                              "slots": 5,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Rathlos Carapace",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Rathalos Ruby",
+                                      "qty": 1
+                                    },
+                                    {
+                                      "item": "Diablos Ridge+",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Reddnaught",
+                                  "attack": 1152,
+                                  "element": "Fire",
+                                  "elementValue": 540,
+                                  "slots": 9,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "Rathalos Cortex",
+                                          "qty": 4
+                                        },
+                                        {
+                                          "item": "Rathalos Lash",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Rathlos Fellwing",
+                                          "qty": 3
+                                        },
+                                        {
+                                          "item": "Rathalos Mantle",
+                                          "qty": 1
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Auberon",
+                              "attack": 1008,
+                              "element": "Dragon",
+                              "elementValue": 100,
+                              "slots": 6,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Rathalos Scale+",
+                                      "qty": 6
+                                    },
+                                    {
+                                      "item": "A.Rath Carapace",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "A.Rath Scale+",
+                                      "qty": 6
+                                    },
+                                    {
+                                      "item": "Rathalos Ruby",
+                                      "qty": 1
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Pale Kaiser",
+                                  "attack": 1200,
+                                  "element": "Dragon",
+                                  "elementValue": 320,
+                                  "slots": 9,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "A.Rathalos Lash",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Rathlos Fellwing",
+                                          "qty": 2
+                                        },
+                                        {
+                                          "item": "Rathalos Mantle",
+                                          "qty": 1
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Ludroth Bone Sword",
+              "attack": 528,
+              "element": "Water",
+              "elementValue": 100,
+              "slots": 1,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Immature Sponge",
+                      "qty": 4
+                    },
+                    {
+                      "item": "Hydro Hide",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Monster Bone S",
+                      "qty": 3
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Cataclysm Sword",
+                  "attack": 624,
+                  "element": "Water",
+                  "elementValue": 100,
+                  "slots": 3,
+                  "materials": [
+                    {
+                      "type": "create",
+                      "items": [
+                        {
+                          "item": "Spongy Hide",
+                          "qty": 5
+                        },
+                        {
+                          "item": "R.Ludroth Claw",
+                          "qty": 3
+                        },
+                        {
+                          "item": "R.Ludroth Crest",
+                          "qty": 2
+                        },
+                        {
+                          "item": "Gobul Fin",
+                          "qty": 4
+                        }
+                      ]
+                    },
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Spongy Hide",
+                          "qty": 4
+                        },
+                        {
+                          "item": "R.Ludroth Claw",
+                          "qty": 2
+                        },
+                        {
+                          "item": "R.Ludroth Crest",
+                          "qty": 1
+                        },
+                        {
+                          "item": "Gobul Spike",
+                          "qty": 4
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Cataclysm Blade",
+                      "attack": 672,
+                      "element": "Water",
+                      "elementValue": 130,
+                      "slots": 3,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Spongy Hide",
+                              "qty": 3
+                            },
+                            {
+                              "item": "R.Ludroth Claw",
+                              "qty": 3
+                            },
+                            {
+                              "item": "Barioth Pelt",
+                              "qty": 4
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Finblade",
+                          "attack": 816,
+                          "element": "Water",
+                          "elementValue": 240,
+                          "slots": 4,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Plesioth Scale+",
+                                  "qty": 4
+                                },
+                                {
+                                  "item": "Plesioth Fin+",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Mega Demondrug",
+                                  "qty": 1
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "Plesioth Watercutter",
+                              "attack": 864,
+                              "element": "Water",
+                              "elementValue": 300,
+                              "slots": 6,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Plesioth Fin+",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Plesioth Fang+",
+                                      "qty": 6
+                                    },
+                                    {
+                                      "item": "Plesioth Head",
+                                      "qty": 1
+                                    },
+                                    {
+                                      "item": "G.Agnak Claw+",
+                                      "qty": 3
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": [
+                                {
+                                  "name": "Plesioth Lullaby",
+                                  "attack": 912,
+                                  "element": "Sleep",
+                                  "elementValue": 300,
+                                  "slots": 8,
+                                  "materials": [
+                                    {
+                                      "type": "upgrade",
+                                      "items": [
+                                        {
+                                          "item": "G.Plesio Shard",
+                                          "qty": 5
+                                        },
+                                        {
+                                          "item": "Fine G.Plesi Fin",
+                                          "qty": 4
+                                        },
+                                        {
+                                          "item": "Lrg Wyvern Stone",
+                                          "qty": 2
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "children": [
+                                    {
+                                      "name": "Plesioth Lullabane",
+                                      "attack": 960,
+                                      "element": "Sleep",
+                                      "elementValue": 380,
+                                      "slots": 9,
+                                      "materials": [
+                                        {
+                                          "type": "upgrade",
+                                          "items": [
+                                            {
+                                              "item": "Hvy Plesio Fang",
+                                              "qty": 5
+                                            },
+                                            {
+                                              "item": "Fine G.Plesi Fin",
+                                              "qty": 4
+                                            },
+                                            {
+                                              "item": "Uber Plesio Head",
+                                              "qty": 1
+                                            },
+                                            {
+                                              "item": "Fine G.Agnak Fin",
+                                              "qty": 3
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Plesioth Aquablade",
+                              "attack": 1248,
+                              "element": "Water",
+                              "elementValue": 450,
+                              "slots": 9,
+                              "materials": [
+                                {
+                                  "type": "upgrade",
+                                  "items": [
+                                    {
+                                      "item": "Plesioth Shard",
+                                      "qty": 5
+                                    },
+                                    {
+                                      "item": "Hvy Plesio Fang",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Fine Plesio Fin",
+                                      "qty": 4
+                                    },
+                                    {
+                                      "item": "Lagiacrus Talon",
+                                      "qty": 4
+                                    }
+                                  ]
+                                }
+                              ],
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amethyst Blade",
+      "attack": 960,
+      "element": "Poison",
+      "elementValue": 440,
+      "slots": 8,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Plum Spongy Piel",
+              "qty": 4
+            },
+            {
+              "item": "P.Ludroth Shard",
+              "qty": 5
+            },
+            {
+              "item": "P.Ludroth Talon",
+              "qty": 3
+            },
+            {
+              "item": "R.Ludroth Lash",
+              "qty": 2
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Miasmethyst",
+          "attack": 1104,
+          "element": "Poison",
+          "elementValue": 580,
+          "slots": 9,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Plum Spongy Piel",
+                  "qty": 5
+                },
+                {
+                  "item": "P.Ludroth Talon",
+                  "qty": 5
+                },
+                {
+                  "item": "Foul Venom Gland",
+                  "qty": 4
+                },
+                {
+                  "item": "L.Narga Dapples",
+                  "qty": 4
+                }
+              ]
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Frozen Speartuna",
+      "attack": 672,
+      "element": "Ice",
+      "elementValue": 380,
+      "slots": 3,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Speartuna",
+              "qty": 1
+            },
+            {
+              "item": "Cool Drink",
+              "qty": 3
+            },
+            {
+              "item": "Frost Sac",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Freezer Speartuna",
+          "attack": 816,
+          "element": "Ice",
+          "elementValue": 580,
+          "slots": 5,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Speartuna",
+                  "qty": 1
+                },
+                {
+                  "item": "Freezer Sac",
+                  "qty": 5
+                },
+                {
+                  "item": "Voucher",
+                  "qty": 10
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Xiphias Gladius",
+              "attack": 912,
+              "element": "Ice",
+              "elementValue": 730,
+              "slots": 8,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Speartuna",
+                      "qty": 1
+                    },
+                    {
+                      "item": "Cryo Sac",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Gourmet Voucher",
+                      "qty": 15
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wyvern's Perch",
+      "attack": 576,
+      "element": "Poison",
+      "elementValue": 400,
+      "slots": 4,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Toxin Sac",
+              "qty": 2
+            },
+            {
+              "item": "Stoutbone",
+              "qty": 3
+            },
+            {
+              "item": "Toadstool",
+              "qty": 10
+            },
+            {
+              "item": "Monster Bone+",
+              "qty": 5
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Roguish Deathcap",
+          "attack": 720,
+          "element": "Poison",
+          "elementValue": 600,
+          "slots": 6,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Monster Hardbone",
+                  "qty": 5
+                },
+                {
+                  "item": "Toadstool",
+                  "qty": 20
+                },
+                {
+                  "item": "Toxin Sac",
+                  "qty": 5
+                },
+                {
+                  "item": "Nargacuga Pelt+",
+                  "qty": 4
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Lordly Deathcap",
+              "attack": 912,
+              "element": "Poison",
+              "elementValue": 990,
+              "slots": 8,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Monster Essence",
+                      "qty": 10
+                    },
+                    {
+                      "item": "Monster Slogbone",
+                      "qty": 3
+                    },
+                    {
+                      "item": "Toxin Sac",
+                      "qty": 10
+                    },
+                    {
+                      "item": "Foul Venom Gland",
+                      "qty": 3
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Berserker Sword",
+      "attack": 1152,
+      "element": "Dragon",
+      "elementValue": 100,
+      "slots": 6,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Deviljho Fang",
+              "qty": 5
+            },
+            {
+              "item": "Deviljho Talon",
+              "qty": 3
+            },
+            {
+              "item": "Deviljho Tail",
+              "qty": 3
+            },
+            {
+              "item": "A.Rathalos Wing",
+              "qty": 2
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Anguish",
+          "attack": 1248,
+          "element": "Dragon",
+          "elementValue": 200,
+          "slots": 9,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Deviljho Ripper",
+                  "qty": 3
+                },
+                {
+                  "item": "Deviljho Coat",
+                  "qty": 5
+                },
+                {
+                  "item": "Deviljho Gem",
+                  "qty": 1
+                },
+                {
+                  "item": "Brach Pounder+",
+                  "qty": 2
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Nero's Anguish",
+              "attack": 1392,
+              "element": "Dragon",
+              "elementValue": 250,
+              "slots": 10,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Deviljho Coat",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Vile Fang",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Deviljho Crook",
+                      "qty": 1
+                    },
+                    {
+                      "item": "Elder Dragonbone",
+                      "qty": 3
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alatreon Great Sword",
+      "attack": 864,
+      "element": "Dragon",
+      "elementValue": 300,
+      "slots": 7,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Brkn Skypiercer",
+              "qty": 3
+            },
+            {
+              "item": "Alatreon Talon",
+              "qty": 5
+            },
+            {
+              "item": "ElderDragonBlood",
+              "qty": 3
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Alatreon Revolution",
+          "attack": 1056,
+          "element": "Dragon",
+          "elementValue": 450,
+          "slots": 10,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Conqueror's Seal",
+                  "qty": 3
+                },
+                {
+                  "item": "Skyswayer",
+                  "qty": 3
+                },
+                {
+                  "item": "Alatreon Mantle",
+                  "qty": 4
+                },
+                {
+                  "item": "Azure Dragongem",
+                  "qty": 1
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Altheos Evolutia",
+              "attack": 1200,
+              "element": "Dragon",
+              "elementValue": 580,
+              "slots": 10,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Conqueror's Seal",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Alatreon Ripper",
+                      "qty": 3
+                    },
+                    {
+                      "item": "Alatreon Pallium",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Azure Drgnsphire",
+                      "qty": 1
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Megiddo Blaze",
+      "attack": 1008,
+      "element": "Fire",
+      "elementValue": 600,
+      "slots": 10,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Miralis Fireclaw",
+              "qty": 3
+            },
+            {
+              "item": "Miralis Fireback",
+              "qty": 4
+            },
+            {
+              "item": "Miralis Hellwing",
+              "qty": 2
+            },
+            {
+              "item": "Miralis Evil Eye",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "The Depotheosis",
+          "attack": 1056,
+          "element": "Fire",
+          "elementValue": 720,
+          "slots": 10,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Immortal Heart",
+                  "qty": 2
+                },
+                {
+                  "item": "Gushing Magma",
+                  "qty": 3
+                },
+                {
+                  "item": "Dire Dragongem",
+                  "qty": 1
+                },
+                {
+                  "item": "Elder Dragonbone",
+                  "qty": 5
+                }
+              ]
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Eclipse Blade",
+      "attack": 1056,
+      "element": "Poison",
+      "elementValue": 220,
+      "slots": 10,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "L.Narga Razor",
+              "qty": 5
+            },
+            {
+              "item": "Hvy L.Narga Fang",
+              "qty": 2
+            },
+            {
+              "item": "Narga Medulla",
+              "qty": 5
+            },
+            {
+              "item": "L.Narg Tailspear",
+              "qty": 5
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Merak's Asterism",
+          "attack": 1152,
+          "element": "Poison",
+          "elementValue": 280,
+          "slots": 10,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Nargacuga Mantle",
+                  "qty": 1
+                },
+                {
+                  "item": "Hvy L.Narga Fang",
+                  "qty": 5
+                },
+                {
+                  "item": "L.Narg Tailspear",
+                  "qty": 3
+                },
+                {
+                  "item": "Cloudy Moonshard",
+                  "qty": 1
+                }
+              ]
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Vulcanis",
+      "attack": 624,
+      "element": "Slime",
+      "elementValue": 100,
+      "slots": 3,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Lightcrystal",
+              "qty": 2
+            },
+            {
+              "item": "Pelagicite Ore",
+              "qty": 10
+            },
+            {
+              "item": "Monster Fluid",
+              "qty": 5
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Vulcanis+",
+          "attack": 672,
+          "element": "Slime",
+          "elementValue": 150,
+          "slots": 3,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Firestone",
+                  "qty": 4
+                },
+                {
+                  "item": "Dragonite Ore",
+                  "qty": 8
+                },
+                {
+                  "item": "Uragaan Marrow",
+                  "qty": 1
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Vulcanvil",
+              "attack": 768,
+              "element": "Slime",
+              "elementValue": 200,
+              "slots": 4,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Firestone",
+                      "qty": 10
+                    },
+                    {
+                      "item": "Gracium",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Lava Nugget",
+                      "qty": 3
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Vulcamagnon",
+                  "attack": 816,
+                  "element": "Slime",
+                  "elementValue": 250,
+                  "slots": 5,
+                  "materials": [
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Fucium Ore",
+                          "qty": 2
+                        },
+                        {
+                          "item": "Dragonbone Relic",
+                          "qty": 2
+                        },
+                        {
+                          "item": "Mystery Slime",
+                          "qty": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Vulcatastrophe",
+                      "attack": 1008,
+                      "element": "Slime",
+                      "elementValue": 400,
+                      "slots": 8,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Purecrystal",
+                              "qty": 2
+                            },
+                            {
+                              "item": "Firecell Stone",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Lrg Wyvern Stone",
+                              "qty": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Vulca Vendetta",
+                          "attack": 1152,
+                          "element": "Slime",
+                          "elementValue": 620,
+                          "slots": 9,
+                          "materials": [
+                            {
+                              "type": "upgrade",
+                              "items": [
+                                {
+                                  "item": "Allfire Stone",
+                                  "qty": 5
+                                },
+                                {
+                                  "item": "Uragaan Cortex",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Lrg Wyvern Stone",
+                                  "qty": 3
+                                },
+                                {
+                                  "item": "Glowing Slime",
+                                  "qty": 4
+                                }
+                              ]
+                            }
+                          ],
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rusted Great Sword",
+      "attack": 480,
+      "element": "Dragon",
+      "elementValue": 100,
+      "slots": 3,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Rustshard",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Tarnished Great Swd",
+          "attack": 480,
+          "element": "Dragon",
+          "elementValue": 100,
+          "slots": 3,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Earth Crystal",
+                  "qty": 20
+                },
+                {
+                  "item": "Monster Fluid",
+                  "qty": 5
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Ancient Blade",
+              "attack": 720,
+              "element": "Dragon",
+              "elementValue": 220,
+              "slots": 3,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Earth Crystal",
+                      "qty": 40
+                    },
+                    {
+                      "item": "Frost Sac",
+                      "qty": 2
+                    },
+                    {
+                      "item": "Flame Sac",
+                      "qty": 2
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Elder Monument",
+                  "attack": 816,
+                  "element": "Dragon",
+                  "elementValue": 300,
+                  "slots": 4,
+                  "materials": [
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Earth Crystal",
+                          "qty": 60
+                        },
+                        {
+                          "item": "ElderDragonBlood",
+                          "qty": 2
+                        },
+                        {
+                          "item": "Dragonbone Relic",
+                          "qty": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Eternal Glyph",
+                      "attack": 864,
+                      "element": "Dragon",
+                      "elementValue": 340,
+                      "slots": 5,
+                      "materials": [
+                        {
+                          "type": "upgrade",
+                          "items": [
+                            {
+                              "item": "Earth Crystal",
+                              "qty": 80
+                            },
+                            {
+                              "item": "ElderDragonBlood",
+                              "qty": 5
+                            },
+                            {
+                              "item": "Brach Scalp",
+                              "qty": 2
+                            }
+                          ]
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Worn Great Sword",
+      "attack": 480,
+      "element": "Dragon",
+      "elementValue": 100,
+      "slots": 8,
+      "materials": [
+        {
+          "type": "create",
+          "items": [
+            {
+              "item": "Ancient Shard",
+              "qty": 1
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "name": "Weathered Great Swd",
+          "attack": 528,
+          "element": "Dragon",
+          "elementValue": 100,
+          "slots": 8,
+          "materials": [
+            {
+              "type": "upgrade",
+              "items": [
+                {
+                  "item": "Earth Crystal",
+                  "qty": 30
+                },
+                {
+                  "item": "Monster Essence",
+                  "qty": 5
+                },
+                {
+                  "item": "Commendation",
+                  "qty": 2
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "name": "Epitaph Blade",
+              "attack": 960,
+              "element": "Dragon",
+              "elementValue": 550,
+              "slots": 9,
+              "materials": [
+                {
+                  "type": "upgrade",
+                  "items": [
+                    {
+                      "item": "Earth Crystal",
+                      "qty": 70
+                    },
+                    {
+                      "item": "Dragonbone Relic",
+                      "qty": 5
+                    },
+                    {
+                      "item": "Conqueror's Seal",
+                      "qty": 3
+                    },
+                    {
+                      "item": "Allfire Stone",
+                      "qty": 1
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "name": "Epitaph Eternal",
+                  "attack": 1152,
+                  "element": "Dragon",
+                  "elementValue": 700,
+                  "slots": 9,
+                  "materials": [
+                    {
+                      "type": "upgrade",
+                      "items": [
+                        {
+                          "item": "Earth Crystal",
+                          "qty": 99
+                        },
+                        {
+                          "item": "Lrg Wyvern Stone",
+                          "qty": 1
+                        },
+                        {
+                          "item": "Conqueror's Seal",
+                          "qty": 4
+                        },
+                        {
+                          "item": "S.Zinogre Talon",
+                          "qty": 4
+                        }
+                      ]
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

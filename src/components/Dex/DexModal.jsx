@@ -4,12 +4,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import MonsterDropsTable from "./MonsterDropsTable";
 import ItemDropsTable from "./ItemDropsTable";
 import WeaponTable from "./WeaponTable";
+import WeaponTree from "./WeaponTree";
 
 export default function DexModal({ open, onClose }) {
   const [tab, setTab] = useState("monster");
   const [monsterData, setMonsterData] = useState(null);
   const [itemData, setItemData] = useState(null);
   const [craftingData, setCraftingData] = useState(null);
+
+  const [weaponTreeData, setWeaponTreeData] = useState(null);
 
   const [selectedMonster, setSelectedMonster] = useState(null);
   const [selectedItem, setSelectedItem] = useState("");
@@ -27,15 +30,18 @@ export default function DexModal({ open, onClose }) {
     async function load() {
       setLoading(true);
       try {
-        const [monsterRes, itemRes, craftingRes] = await Promise.all([
-          fetch("/Monsters.json"),
-          fetch("/DropMonsters.json"),
-          fetch("/WeaponTrees.json"),
-        ]);
+        const [monsterRes, itemRes, craftingRes, weaponTreeRes] =
+          await Promise.all([
+            fetch("/Monsters.json"),
+            fetch("/DropMonsters.json"),
+            fetch("/WeaponTrees.json"),
+            fetch("/WeaponChildrenTrees.json"), // 🔥 NOVO
+          ]);
 
         setMonsterData(await monsterRes.json());
         setItemData(await itemRes.json());
         setCraftingData(await craftingRes.json());
+        setWeaponTreeData(await weaponTreeRes.json()); // 🔥 NOVO
       } catch (err) {
         console.error("Erro ao carregar dados:", err);
       } finally {
@@ -109,6 +115,17 @@ export default function DexModal({ open, onClose }) {
               className={`p-2 rounded font-semibold text-left transition ${tab === "weapon" ? "bg-green-600 text-white" : "text-gray-700 hover:bg-gray-200"}`}
             >
               Weapon Table
+            </button>
+
+            <button
+              onClick={() => setTab("weaponTree")}
+              className={`p-2 rounded font-semibold text-left transition ${
+                tab === "weaponTree"
+                  ? "bg-purple-600 text-white"
+                  : "text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              Weapon Tree 🌳
             </button>
 
             <button className="p-2 rounded opacity-40 cursor-not-allowed text-left font-semibold">
@@ -208,6 +225,10 @@ export default function DexModal({ open, onClose }) {
             {/* ABA: WEAPONS */}
             {tab === "weapon" && (
               <WeaponTable craftingData={craftingData} loading={loading} />
+            )}
+
+            {tab === "weaponTree" && (
+              <WeaponTree data={weaponTreeData} loading={loading} />
             )}
           </div>
         </motion.div>
